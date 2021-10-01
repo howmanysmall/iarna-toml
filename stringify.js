@@ -187,7 +187,8 @@ function stringifyInline (value, type) {
 
 function stringifyInteger (value) {
   /* eslint-disable security/detect-unsafe-regex */
-  return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, '_')
+//   return String(value).replace(/\B(?=(\d{3})+(?!\d))/g, '_')
+  return String(value);
 }
 
 function stringifyFloat (value) {
